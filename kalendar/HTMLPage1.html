@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #Dni {
+            background-color:rgba(81, 78, 78, 0.74); 
+
+        }
+        .dnite {
+            background-color:#164c84;
+        }
+        #white {
+            background-color:#ffffff;
+        }
+        #dnes {background-color:#637ea9;
+
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr id="Dni">
+            <td>П</td>
+            <td>В</td>
+            <td>С</td>
+            <td id="white">Ч</td>
+            <td>П</td>
+            <td>С</td>
+            <td>Н</td>
+        </tr>
+        <tr class="dnite">
+           <th colspan="5";    
+               <td></td>
+            </th>    
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr class="dnite">
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr class="dnite">
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr class="dnite">
+            <td>17</td>
+            <td>18</td>
+            <td id="dnes">19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr class="dnite">
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+        
+    </table>
+    <div>
+        <img id="animation" style="opacity:1" src="Poli.jpg" />
+    </div>
+</body>
+<script>
+	function changeOpacity(){
+		var img = document.getElementById('animation');
+
+		if(img){
+			var opacity = (img.style.opacity || 1) * 1;
+			img.style.opacity = (opacity * 1 + 0.1) % 1;
+		}
+	}
+
+	setInterval(changeOpacity, 150);
+</script>
+</html>
